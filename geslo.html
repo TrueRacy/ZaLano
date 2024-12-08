@@ -97,7 +97,7 @@
       top: 0;
     }
 
-    /* Animacija src */
+    
     @keyframes float {
       0%, 100% {
         transform: translateY(0);
@@ -125,16 +125,17 @@
 
   <script>
     function preveriGeslo() {
-      const pravilnoGeslo = "LančotkaBrOskoli16062023"; // Nastavi svoje geslo
+      const pravilnoGeslo = "LančotkaBroskoli"; // Nastavi svoje geslo
       const vnesenoGeslo = document.getElementById("password").value;
       const error = document.getElementById("error");
 
       if (vnesenoGeslo === pravilnoGeslo) {
         window.location.href = "main.html";
       } else {
-        error.textContent = "Napačn, huligan. Kdo misliš da si???";
+        error.textContent = "Napačno geslo. Posus ponovno.";
       }
     }
   </script>
+
 </body>
 </html>
